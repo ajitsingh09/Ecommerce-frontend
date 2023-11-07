@@ -3,6 +3,7 @@ import CartIcon from "@/components/icons/CartIcon";
 import Link from "next/link";
 import { useContext } from "react";
 import Button from "@/components/ui/Button";
+import { CartContext } from "@/components/context/CartContext";
 
 const ProductWrapper = styled.div``;
 
@@ -56,7 +57,7 @@ const Price = styled.div`
 `;
 
 export default function ProductBox({ _id, title, description, price, images }) {
-  //   const {addProduct} = useContext(CartContext);
+  const { addProduct } = useContext(CartContext);
   const url = "/product/" + _id;
   return (
     <ProductWrapper>
@@ -69,7 +70,14 @@ export default function ProductBox({ _id, title, description, price, images }) {
         <Title href={url}>{title}</Title>
         <PriceRow>
           <Price>${price}</Price>
-          <Button block onClick={() => {}} primary outline>
+          <Button
+            block
+            onClick={() => {
+              addProduct(_id);
+            }}
+            primary
+            outline
+          >
             Add to cart
           </Button>
         </PriceRow>

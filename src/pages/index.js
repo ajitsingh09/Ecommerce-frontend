@@ -3,13 +3,20 @@ import { Product } from "@/components/modals/product";
 import Header from "@/components/nav/Header";
 import Featured from "@/components/parts/home/Featured";
 import NewProducts from "@/components/parts/home/NewProducts";
+import styled from "styled-components";
+
+const Container = styled.div`
+  padding-bottom: 35px;
+`;
 
 export default function Home({ featuredProduct, newProducts }) {
   return (
     <div>
       <Header />
       <Featured product={featuredProduct} />
-      <NewProducts product={newProducts} />
+      <Container>
+        <NewProducts product={newProducts} />
+      </Container>
     </div>
   );
 }
