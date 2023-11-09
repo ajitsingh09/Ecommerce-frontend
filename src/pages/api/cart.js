@@ -1,5 +1,5 @@
 import { mongooseConnect } from "@/components/lib/mongoose";
-import { Product } from "@/components/modals/product";
+import { Product } from "@/components/models/product";
 
 export default async function handle(req, res) {
   await mongooseConnect();

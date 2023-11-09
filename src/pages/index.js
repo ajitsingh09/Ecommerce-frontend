@@ -1,5 +1,5 @@
 import { mongooseConnect } from "@/components/lib/mongoose";
-import { Product } from "@/components/modals/product";
+import { Product } from "@/components/models/product";
 import Header from "@/components/nav/Header";
 import Featured from "@/components/parts/home/Featured";
 import NewProducts from "@/components/parts/home/NewProducts";

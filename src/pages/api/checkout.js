@@ -1,6 +1,6 @@
 import { mongooseConnect } from "@/components/lib/mongoose";
-import { Order } from "@/components/modals/order";
-import { Product } from "@/components/modals/product";
+import { Order } from "@/components/models/order";
+import { Product } from "@/components/models/product";
 const stripe = require("stripe")(process.env.STRIPE_SK);
 
 export default async function handler(req, res) {
