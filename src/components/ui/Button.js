@@ -51,6 +51,7 @@ export const ButtonStyle = css`
       color: #000;
       border: 1px solid #000;
     `}
+    
   ${(props) =>
     props.primary &&
     !props.outline &&
@@ -75,6 +76,13 @@ export const ButtonStyle = css`
       svg {
         height: 20px;
       }
+    `}
+    ${(props) =>
+    props.disabled &&
+    css`
+      background-color: #d4d3d2;
+      color: #000;
+      /* border: 1px solid #000; */
     `}
 `;
 

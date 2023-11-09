@@ -6,7 +6,7 @@ const Header = dynamic(() => import("../nav/Header"), {
 });
 
 const Layout = ({ children }) => {
-  const [isClient, setIsClient] = useState(false);
+  const [isClient, setIsClient] = useState(false); //to make the page render on client side
   useEffect(() => {
     setIsClient(true);
   }, []);
