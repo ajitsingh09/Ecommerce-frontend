@@ -1,40 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ecommerce Admin
+
+Admin (SC) : https://github.com/ajitsingh09/Ecommerce-admin
+
+Admin Demo Link: https://admin-next-ecom.vercel.app
+
+StoreFront (SC): https://github.com/ajitsingh09/Ecommerce-frontend/tree/master
+
+StoreFront Demo Link: https://next-real-ecom.vercel.app/
+
+## Overview
+
+This project is an ecommerce storefront built using Next.js, Styled Components, MongoDB, and integrated with Stripe for secure payment processing. It provides a user-friendly interface for customers to browse products, add them to the cart, and complete the purchase process.
+
+## Features
+
+- **Next.js**: The project is built on the Next.js framework, providing a fast and efficient React-based development experience.
+
+- **MongoDB**: MongoDB is used as the database to store and manage product data, user information, and order details.
+
+- **Styled Components**: Styled Components are used for styling, providing a dynamic and responsive design for the ecommerce storefront.
+
+- **Stripe Integration**: Securely handle online payments using Stripe. Customers can make payments with confidence, and you can manage transactions seamlessly.
 
 ## Getting Started
 
-First, run the development server:
+#### Pre-requisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js: Make sure you have Node.js installed on your machine.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- MongoDB: Set up a MongoDB database and obtain the connection string.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Stripe: Create a Stripe account and obtain the necessary API keys.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- ### Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  1. Clone the repo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  ```
+  git clone https://github.com/your-username/ecommerce-storefront.git
+  cd  ecommerce-storefront
 
-## Learn More
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+  2. Install dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  ```
+   npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  ```
 
-## Deploy on Vercel
+  3. Create a .env file in the root directory with the following variables:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  ```bash
+  MONGODB_URI=
+  STRIPE_PK=
+  STRIPE_SK=
+  PUBLIC_URL=
+  STRIPE_WHS=
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  ```
+
+  4.Run the development server :
+
+  ```
+  npm run dev
+  ```
+
+## Usage
+
+- **Product Browsing**: Customers can browse through a range of products with a user-friendly and responsive interface.
+
+- **Shopping Cart**: Users can add products to the cart and proceed to checkout.
+
+- **Payment Processing**: Securely handle online payments with Stripe integration during the checkout process.
+
+## Contributing
+
+Contributions are always welcome!
