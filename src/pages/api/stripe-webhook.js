@@ -3,7 +3,7 @@ import { mongooseConnect } from "@/components/lib/mongoose";
 import { Order } from "@/components/models/order";
 const stripe = require("stripe")(process.env.STRIPE_SK);
 
-const endpointSecret = process.env.STRIPE_WHS
+const endpointSecret = process.env.STRIPE_WHS;
 
 export default async function handler(req, res) {
   await mongooseConnect();

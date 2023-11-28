@@ -34,3 +34,13 @@ export const Input = styled.input`
       color: #000;
     `}
 `;
+
+export const WhiteBox = styled.div`
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+`;
+
+export const Title = styled.h1`
+  font-size: 1.5em;
+`;
